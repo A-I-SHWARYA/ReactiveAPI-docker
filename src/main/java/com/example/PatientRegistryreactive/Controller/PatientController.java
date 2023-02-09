@@ -24,9 +24,6 @@ public class PatientController {
         return repo.findAll();
     }
 
-    @PostMapping("/addPatient")
-    public Mono<Patients> addPatient(@RequestBody Patients patient) {
-        return repo.save(patient);
-    }
+
 }
 
